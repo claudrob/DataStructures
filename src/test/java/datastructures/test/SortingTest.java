@@ -1,6 +1,7 @@
 package datastructures.test;
 
 import my.datastructures.BubbleSort;
+import my.datastructures.InsertionSort;
 import my.datastructures.SelectionSort;
 
 import java.util.Arrays;
@@ -10,7 +11,7 @@ public class SortingTest {
     public static void main(String [] args) {
         testBubbleSort();
         testSelectionSort();
-
+        testInsertionSort();
     }
 
     private static void testBubbleSort() {
@@ -44,7 +45,7 @@ public class SortingTest {
         System.out.println("Original Array:");
         System.out.println(Arrays.toString(myArray));
 
-        SelectionSort.selectionSort(myArray);
+        InsertionSort.insertionSort(myArray);
         System.out.println("Sorted Array:");
         System.out.println(Arrays.toString(myArray));
     }
